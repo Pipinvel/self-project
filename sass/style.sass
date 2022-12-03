@@ -1,0 +1,330 @@
+@font-face 
+    font-family: "RobotoB"
+    src: url(../fonts/Roboto-Regular.ttf)
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "RobotoB"
+    src: url(../fonts/Roboto-Medium.ttf)
+    font-weight: medium
+    font-style: normal
+
+* 
+    box-sizing: border-box
+
+$color-blue: #34547A
+
+html
+    font-family: "RobotoB"
+    font-weight: regular
+    
+.container  
+    max-width: 1140px
+    margin: 0 auto
+
+.main-section
+    min-height: 700px
+    background-color: #EEEFF1
+    &__container
+        padding-top: 50px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center 
+    &__content
+        display: inline-flex
+        margin-top: 140px
+    &__image
+        margin-right: 143px
+        margin-left: 100px
+
+
+.menu
+    &__list
+            display: inline-flex
+    &__list-item
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        text-transform: uppercase
+        margin-right: 42px
+        color: #000
+        a
+            text-decoration: none
+            color: black
+            &:hover
+                color:  #34547A
+
+.right-wrapper
+    width: 540px
+    &__title
+        font-weight: 500
+        font-size: 48px
+        color: #000
+        margin-top: 0
+        margin-bottom: 60px
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        color: #727272
+        margin-bottom: 85px
+    &__button
+
+.button
+    width: 225px
+    height: 65px
+    background-color: #34547A
+    border: none
+    color: #fff
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 16px
+    line-height: 26px
+    text-align: center
+    letter-spacing: 0.1em
+// ---------------second section-------------
+.second-section
+    min-height: 366px
+    display: flex
+    justify-content: center
+    align-items: center
+    &__text
+        margin: 0 auto
+
+.text-wrapper
+    width: 540px
+    &__title
+        font-weight: 500
+        font-size: 32px
+        text-align: center
+        color: #000000
+        margin-bottom: 50px
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        color: #727272
+        padding: 0 20px
+// ---------------blue block section-------------
+.block-section
+    min-height: 250px
+    background-color: $color-blue
+    display: flex
+    align-items: center
+
+.icon
+    display: inline-flex
+    align-items: center
+    margin-right: 50px
+    &:last-child
+        margin-right: 0px
+    &__img
+        margin-right: 20px
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 25px
+        color: #fff
+        span
+            font-weight: 500
+            font-size: 21px
+    // ---------------third section-------------
+.third-section
+    &__container
+        padding-top: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 100px
+    &__left-wrapper
+        
+    &__img
+        width: 555px
+        height: 450px  
+
+.left-wrapper
+    height: 450px
+    display: flex
+    
+    &__item
+        margin-bottom: 29.76px
+    &__title
+        font-weight: 500
+        font-size: 32px
+        color: black
+        margin-bottom: 50px
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        color: #727272
+        margin-bottom: 19.88px
+    &__line
+        width: 445px
+        height: 4px
+        background: #C4C4C4
+    &__line-line
+        width: 349.36px
+        height: 4px
+        background: #34547A
+// ---------------fourth section-------------
+.fourth-section
+    height: 1004px
+    background-color: #EEEFF1
+    &__container
+         position: relative
+         display: flex
+         align-items: center
+         justify-content: center
+    &__text 
+        position: absolute
+        top:100px
+    &__video
+        position: absolute
+        top: 317px
+        video
+            width: 1100px
+            height: 600px
+
+// -------------fifth-section---------------
+.fifth-section
+    min-height: 1280px
+    &__img-wrapper
+        display: flex
+        flex-wrap: wrap
+        padding-top: 28PX
+        margin-bottom: 72px
+    &__images
+        position: relative
+        display: flex
+        cursor: pointer
+        overflow: hidden
+        width: 25%
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8))
+            opacity: 0
+            z-index: 2
+            transition: all .3s ease
+            content: ''
+        &:hover:before
+            opacity: 1
+        // &:hover
+        //     transform: scale(1.05)
+        //     transform: translateY(0)
+    &__images-item1
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transform: scale(1.05)
+        transition: all .3s ease
+    &__images-item2
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__images-item-logo
+        position: absolute
+        top: 164px
+        left: 164px
+        overflow: hidden
+        z-index: 3
+        opacity: 0
+        &:hover
+            opacity: 2
+        >img
+            display: block
+            transform: translateY(100PX)
+            transition: transform .3s ease
+            transform: translateY(0)
+            transform: scale(0.7)
+    &__logos
+        img
+            margin-right: 30px
+            &:last-child
+                margin-right: 0PX
+// ---------------last-section------------------
+
+.last-section
+    background-color: #EEEFF1
+    &__container
+        padding-top: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+    &__text
+        margin-bottom: 65px
+    &__form
+        display: flex
+        justify-content: center
+    &__first-wrapper
+        display: inline-flex
+        margin-bottom: 20px
+
+.form
+    display: flex
+    flex-direction: column
+    
+    &__block
+        margin-right: 30px
+        input
+            padding-top: 15px
+            padding-left: 20px
+            width: 255px
+            height: 50px
+            border: none
+            :-moz-placeholder 
+                font-weight: 400
+                font-size: 30px
+                color: #5F5D5D
+                
+    &__block-big
+        margin-bottom: 50px
+        input
+            padding-left: 20px
+            width: 540px
+            height: 175px
+            border: none
+            
+            ::-webkit-input-placeholder
+
+                font-weight: 400
+                font-size: 30px
+                color: #5F5D5D
+            
+
+    &__button
+        margin: 0 auto
+        margin-bottom: 100px
+        
+// --------------FOOTER----------
+.footer
+    min-height: 151px
+    background: #34547A
+    &__container
+        height: 151px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        
+    &__title
+        font-weight: 500
+        font-size: 21px
+        color: #fff
+        margin-bottom: 20px
+    &__descr
+        font-weight: 400
+        font-size: 13px
+        color: #fff
+    &__logos
+        img
+            margin-right: 21.87px
+            &:last-child
+                margin-right: 0px
